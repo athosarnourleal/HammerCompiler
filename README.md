@@ -16,5 +16,6 @@ i plan to use them mostly to store address, since during the code compiling they
 #### after compiling: jump: 0010.
 ### creation of a proper executable app
 ### result being displayed as an text file instead of the console (current priority)
+### HSS basic documentation(first finish language)
 ### better HSS code debugging and a proper UI
 # CURRENT VERSION: first alpha not finished
