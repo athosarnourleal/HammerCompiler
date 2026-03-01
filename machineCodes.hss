@@ -1,0 +1,19 @@
+HLT; halt program
+OUT; bus -> display register
+LOB; bus -> B register
+SU; set alu operation as subtraction
+EO; alu -> bus
+LOA; bus -> A register
+JMP; jump counter to the 4lsb of the bus
+CO; counter -> bus
+CEN; counter++(counter enable)
+IO; instruction register operands(4lsb) -> bus
+LOI; bus -> instruction register
+IROMO; ram -> bus
+LOMA; bus(4lsb) -> memory adress register
+RECL; reset control logiC(step counter and instruction register = 0) >> statement 0 is executed(fetch cycle)
+REIC; reset instruction counter(step counter)
+VRAMO; outputs to bus the pointed address on the VRAM
+LOVRAM; load bus value into the pointed VRAM addres
+LOP; sets pointer register value to bus value
+HLTI; halt instruction counter -> end

@@ -1,0 +1,50 @@
+// 4 bits instructions + 4 bit operand -> Hammer computer V 1.0
+
+// code the statements to be used
+>FETCH: // fetch cycle (statementID= 0000)
+  // called automatically when the RECL is activated
+   CO,LOMA.
+   IROMO,LOI,CEN.// sets up new instruction, adds counter, resets steps
+   REIC. // reset steps
+   
+>END: // finish program
+   HLT,HLTI.
+
+>POINT: // set pointer
+   IO,LOP.
+   RECL.
+
+>VSET: // set pointed variable to number(operand)
+   IO,LOVRAM.
+   RECL.
+
+>MOVA: // load variable in address(operand) into RA
+   IO,LOP.
+   RECL.
+
+>MOVB: // load variable in address(operand) into Rb
+   IO, LOB.
+   RECL.
+
+>ADD: // adds previously pointed and currently pointed(address = operand) value, saving it at address(operand)
+   VRAMO,LOB. // set RB as the previously pointed value
+   IO, LOP. // set pointer as operand
+   VRAMO,LOA. // set RA as the now pointed value
+   EO, LOVRAM. // store the result into the result (only 4lsb will be stored)
+   RECL.
+
+>SUB: // subtracts currently pointed(address = operand) by previously pointed value, saving it at address(operand)
+   VRAMO,LOB. // set RB as the previously pointed value
+   IO,LOP. // set pointer as operand
+   VRAMO,LOA. // set RA as the now pointed value
+   SU,EO,LOVRAM. // store the result into the result (only 4lsb will be stored)
+   RECL.
+
+>OUT: // outputs a value in memory from the address(operand)
+  IO,LOP. // sets pointer as operand
+  VRAMO,OUT.
+  RECL.
+
+
+
+

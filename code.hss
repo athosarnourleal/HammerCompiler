@@ -1,0 +1,19 @@
+POINT: 1
+VSET: 2
+POINT: 2
+VSET: 3
+ADD: 1 // adds the value in &2 to &1 and stores in &1
+OUT: 0
+END:
+
+// CODE(4 bit instruction counter) -> 0 - 15 LINES
+// OPERAND BITS = 4 -> NUMBER RANGE IS 0 - 15
+
+//// statement structure
+// STANAME: OPERAND1,OPERAND2 -> each operand will have half of the number of bits of the operand(not implemented)
+
+// STANAME: OPERAND
+// STANAME:
+
+// all operands are decimal or binary integer numbers
+// binary numbers need a "*" identifyer (ex: SET: *0010);
