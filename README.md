@@ -5,7 +5,7 @@ hammer compiler is a personal project designed to handle compiling the human-leg
 
 ## secondary files
 three files are required for the proper execution of the logism Compiler:
-- "MI.hss": holding the microinstructions that are present in each instruction of the ISA
+- "MI.hss": holding the microinstructions that are present in each instruction ID of the instruction decoder
 - "STA.hss": holding the known instructions in the current ISA
 - "code.hss": file holding the actual code used in the program
 
