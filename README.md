@@ -1,14 +1,21 @@
-# HammerCompiler
-hammer compiler is a personal project design to handle compiling the human language hammer assembly(HSS) into readable machine code for logism evolution, originally made for the Hammer V1, a personal 4 bit computer idealized by me
+# Logism Compiler
+hammer compiler is a personal project designed to handle compiling the human-legible instructions from a fully customizable ISA into readable machine code for my personally designed amateur computer architectures based in the `logism evolution` software
+
+# How it works
+
 ## secondary files
-three files are required for the proper execution of HammerCompiler: a "MI.hss" file holding the microinstructions, a "STA.hss" file holding the statements and a "code.hss" file holding the actual code.
-## hammer assembly(HSS)
-all HSS commands used in the final code are completely customizable to ensure that the code can be used in many different small computers
-### Hammer Statements
-a HSS statement is a collection of steps to be executed when the statement is called, each step is a binary value that chooses to send a on(1) or a off(0) signal according to the user input
-### Hammer Microinstructions
-a HSS microinstruction is the name of signal that is sent out of the control logic, an example is the "CO" micro instruction, when its 1, the program counter value is sent into BUS. In the "MI.hss" acts like a enum where the MI code is the number of the line
-## future of HammerCompiler
+three files are required for the proper execution of the logism Compiler:
+- "MI.hss": holding the microinstructions that are present in each instruction of the ISA
+- "STA.hss": holding the known instructions in the current ISA
+- "code.hss": file holding the actual code used in the program
+
+### Instructions
+the instructions created
+
+### Microinstructions
+the microinstruction is the mnemonic of a signal that is sent out of the control logic after the decoding phase, an example is the "CO" micro instruction, that sends a signal in the clock rising edge to the program counter, making it output its current value.
+
+## future of logism Compiler
 updates are planned for the future including
 ### simple variables -> values will represent a binary value (ex: a = 0010)
 i plan to use them mostly to store address, since during the code compiling they will be simply replaced by their value
@@ -18,4 +25,6 @@ i plan to use them mostly to store address, since during the code compiling they
 ### result being displayed as an text file instead of the console (current priority)
 ### HSS basic documentation(first finish language)
 ### better HSS code debugging and a proper UI
-# CURRENT VERSION: version 0.1
+
+# IMPORTANT NOTE:
+the creation and the main development of both my logism based computer architecture and logism compiler predates my formal education and were made purely for entertainment.
