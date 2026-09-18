@@ -27,4 +27,4 @@ i plan to use them mostly to store address, since during the code compiling they
 ### better HSS code debugging and a proper UI
 
 # IMPORTANT NOTE:
-the creation and the main development of both my logism based computer architecture and logism compiler predates my formal education and were made purely for entertainment.
+the creation and the main development of both my logism based computer architecture and logism compiler predates my formal education in computer science and were made purely for entertainment.
