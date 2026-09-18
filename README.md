@@ -1,4 +1,4 @@
-# Logism Compiler
+# Hammer Compiler
 hammer compiler is a personal project designed to handle compiling the human-legible instructions from a fully customizable ISA into readable machine code for my personally designed amateur computer architectures based in the `logism evolution` software
 
 # How it works
